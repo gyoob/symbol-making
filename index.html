@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+  <body>
+    <h1>Creating Flexible Identity Designs for Each Lecture</h1>
+
+    <div id="container">
+      <section id="left">
+        <div id="pre_box"><h2>Symbol Preview</h2></div>
+        <main>
+          <a href="index.html">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.5334 8.46652C22.4159 7.33888 21.0593 6.47667 19.5638 5.94357C18.0684 5.41048 16.4723 5.22011 14.8934 5.38652C10.0001 5.87985 5.97344 9.85319 5.42678 14.7465C4.69344 21.2132 9.69344 26.6665 16.0001 26.6665C18.0136 26.6665 19.9857 26.0952 21.6874 25.019C23.3891 23.9427 24.7505 22.4057 25.6134 20.5865C26.0401 19.6932 25.4001 18.6665 24.4134 18.6665C23.9201 18.6665 23.4534 18.9332 23.2401 19.3732C22.466 21.0385 21.1419 22.3865 19.4907 23.1903C17.8394 23.994 15.9617 24.2046 14.1734 23.7865C11.2134 23.1332 8.82678 20.7199 8.20011 17.7599C7.93669 16.5895 7.93974 15.375 8.20904 14.206C8.47834 13.037 9.007 11.9435 9.75591 11.0064C10.5048 10.0693 11.4548 9.31256 12.5357 8.79214C13.6165 8.27173 14.8005 8.00095 16.0001 7.99985C18.2134 7.99985 20.1868 8.91985 21.6268 10.3732L19.6134 12.3865C18.7734 13.2265 19.3601 14.6665 20.5468 14.6665H25.3334C26.0668 14.6665 26.6668 14.0665 26.6668 13.3332V8.54652C26.6668 7.35985 25.2268 6.75985 24.3868 7.59985L23.5334 8.46652Z" fill="#999999"/>
+            </svg>                              
+          </a>
+        </main>
+      </section>
+      
+      <section id="right">
+          <div id="feat_box">
+            <div class="feature feature1">
+              <div class="label"><p>Major</p><span>전공 학과</span></div>
+              <div class="content">
+                <div id="major1">
+                  <div class="radio"><div class="selected"></div></div>
+                  <p>Design Engineering</p>
+                </div>
+                <div id="major2">
+                  <div class="radio"><div class=""></div></div>
+                  <p>Mechanical Engineering</p>
+                </div>
+                <div id="major3">
+                  <div class="radio"><div class=""></div></div>
+                  <p>Nano Semiconductor Engineering</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature feature2">
+              <div id="opt">
+                <div class="radio"><div class=""></div></div>
+                <div class="label"><p>Option</p><span>선택</span></div>
+              </div>
+              <div id="essen">
+                <div class="radio"><div class="selected"></div></div>
+                <div class="label"><p>Essential</p><span>필수</span></div>
+              </div>
+            </div>
+
+            <div class="feature feature3">
+              <div id="theo">
+                <div class="radio"><div class=""></div></div>
+                <div class="label"><p>Theory</p><span>이론</span></div>
+              </div>
+              <div id="theo_prac">
+                <div class="radio"><div class="selected"></div></div>
+                <div class="label"><p>Theory & Practice</p><span>이론&실습</span></div>
+              </div>
+            </div>
+
+            <div class="feature feature4">
+              <div class="label"><p>Credit</p><span>학점</span></div>
+              <div class="content">
+                <div id="one">
+                  <div class="radio"><div class=""></div></div>
+                  <p>1</p>
+                </div>
+                <div id="two">
+                  <div class="radio"><div class=""></div></div>
+                  <p>2</p>
+                </div>
+                <div id="three">
+                  <div class="radio"><div class="selected"></div></div>
+                  <p>3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature feature5">
+              <div class="label"><p>Major skills</p><span>전공능력별 중점도 (L1-L3)</span></div>
+              <div class="content">
+                <div id="sk1">
+                  <p>skill1</p>
+                  <input type="range" id="slider3" min="1" max="3" value="2">
+                </div>
+                <div id="sk2">
+                  <p>skill2</p>
+                  <input type="range" id="slider12" min="1" max="3" value="1">
+                </div>
+                <div id="sk3">
+                  <p>skill3</p>
+                  <input type="range" id="slider9" min="1" max="3" value="2">
+                </div>
+                <div id="sk4">
+                  <p>skill4</p>
+                  <input type="range" id="slider6" min="1" max="3" value="1">
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <script src="sketch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
